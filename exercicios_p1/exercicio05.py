@@ -13,23 +13,33 @@ cursos = db.cursos
 # Exercício 5: Listar os 3 alunos com maior média individual, mostrando nome, curso e média.
 
 def buscar_maiores_medias(n):
-    todos_alunos = list(alunos.find())
-
-    for aluno in todos_alunos:
-        aluno['media'] = 0
-
-        for nota in aluno['notas']:
-            aluno['media'] += nota
-
-        aluno['media'] /= len(aluno['notas'])
-
-    todos_alunos = sorted(
-        todos_alunos,
-        key=lambda x: x['media'],
-        reverse = True
-    )
-
-    return todos_alunos[:n]
+    pipeline = [
+        {
+            "$addFields": {
+                "media": {
+                    "$avg": "$notas"
+                }
+            }
+        },
+        {
+            "$sort": {
+                "media": -1
+            }
+        },
+        {
+            "$limit": n
+        },
+        {
+            "$project": {
+                "nome": 1,
+                "curso": 1,
+                "media": 1,
+                "_id": 0
+            }
+        }
+    ]
+    
+    return list(alunos.aggregate(pipeline))
 
 n = 3
 alunos = buscar_maiores_medias(n)
