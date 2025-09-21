@@ -31,75 +31,79 @@ mercadorias.insert_many(
 )
 
 clientes.insert_many(
-    {
-        "nome" : "Leandro",
-        "idade" : 36,
-        "mercadorias_compradas" : [
-            "Computador",
-            "Celular",
-            "E-Book"
-        ],
-        "valores_mercadorias" : [
-            3000,
-            2000,
-            500
-        ]
-    },
-    {
-        "nome" : "Luna",
-        "idade" : 23,
-        "mercadorias_compradas" : [
-            "Celular",
-            "E-Book"
-        ],
-        "valores_mercadorias" : [
-            2000,
-            500
-        ]
-    },
-    {
-        "nome" : "Maria",
-        "idade" : 19,
-        "mercadorias_compradas" : [
-            "E-Book"
-        ],
-        "valores_mercadorias" : [
-            500
-        ]
-    }
+    [
+        {
+            "nome" : "Leandro",
+            "idade" : 36,
+            "mercadorias_compradas" : [
+                "Computador",
+                "Celular",
+                "E-Book"
+            ],
+            "valores_mercadorias" : [
+                3000,
+                2000,
+                500
+            ]
+        },
+        {
+            "nome" : "Luna",
+            "idade" : 23,
+            "mercadorias_compradas" : [
+                "Celular",
+                "E-Book"
+            ],
+            "valores_mercadorias" : [
+                2000,
+                500
+            ]
+        },
+        {
+            "nome" : "Maria",
+            "idade" : 19,
+            "mercadorias_compradas" : [
+                "E-Book"
+            ],
+            "valores_mercadorias" : [
+                500
+            ]
+        }
+    ]
 )
 
 vendas.insert_many(
-    {
-        "produto" : "Computador",
-        "quantidade" : 1,
-        "contem" : 14
-    },
-    {
-        "produto" : "Celular",
-        "quantidade" : 1,
-        "contem" : 29
-    },
-    {
-        "produto" : "E-Book",
-        "quantidade" : 1,
-        "contem" : 49
-    },
-    {
-        "produto" : "Celular",
-        "quantidade" : 1,
-        "contem" : 28
-    },
-    {
-        "produto" : "E-Book",
-        "quantidade" : 1,
-        "contem" : 48
-    },
-    {
-        "produto" : "E-Book",
-        "quantidade" : 1,
-        "contem" : 47
-    }
+    [
+        {
+            "produto" : "Computador",
+            "quantidade" : 1,
+            "contem" : 14
+        },
+        {
+            "produto" : "Celular",
+            "quantidade" : 1,
+            "contem" : 29
+        },
+        {
+            "produto" : "E-Book",
+            "quantidade" : 1,
+            "contem" : 49
+        },
+        {
+            "produto" : "Celular",
+            "quantidade" : 1,
+            "contem" : 28
+        },
+        {
+            "produto" : "E-Book",
+            "quantidade" : 1,
+            "contem" : 48
+        },
+        {
+            "produto" : "E-Book",
+            "quantidade" : 1,
+            "contem" : 47
+        }
+    ]
 )
 
 # TESTES:
