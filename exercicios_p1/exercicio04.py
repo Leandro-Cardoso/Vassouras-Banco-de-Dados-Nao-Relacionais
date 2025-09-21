@@ -13,27 +13,42 @@ cursos = db.cursos
 # Exercício 4: Calcular a média geral de notas de todos os alunos ativos.
 
 def calcular_media_geral():
-    alunos_ativos = list(
-        alunos.find(
-            {
-                "ativo" : True
+    pipeline = [
+        {
+            "$match": {
+                "ativo": True
             }
-        )
-    )
+        },
+        {
+            "$addFields": {
+                "media": {
+                    "$avg": "$notas"
+                }
+            }
+        },
+        {
+            "$group": {
+                "_id": None,
+                "media_geral": {
+                    "$avg": "$media"
+                }
+            }
+        },
+        {
+            "$project": {
+                "media_geral": 1,
+                "_id": 0
+            }
+        }
+    ]
+    
+    resultado = list(alunos.aggregate(pipeline))
 
-    resultado = 0
-
-    for aluno in alunos_ativos:
-        media_aluno = 0
-
-        for nota in aluno['notas']:
-            media_aluno += nota
-
-        media_aluno /= len(aluno['notas'])
-        resultado += media_aluno
-
-    return resultado / len(alunos_ativos)
+    if resultado:
+        return resultado[0]["media_geral"]
+    else:
+        return 0
 
 media_geral = calcular_media_geral()
 
-print(f"Média geral: {media_geral}")
+print(f"Média geral: {round(media_geral, 2)}")
