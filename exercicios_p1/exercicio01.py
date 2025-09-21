@@ -15,8 +15,8 @@ cursos = db.cursos
 def alunos_ativos_maiores_20():
     resultado = alunos.find(
         {
-        "ativo": True,
-        "idade": {"$gt": 20}
+            "ativo": True,
+            "idade": {"$gt": 20}
         }
     ).sort("nome", 1)
     
