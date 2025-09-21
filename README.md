@@ -13,3 +13,7 @@ Estudo de banco de dados não relacional, com Python, Django e MongoDB.
 <br>
 
 * [**TRABALHO 01** - Loja](https://github.com/Leandro-Cardoso/Vassouras-Banco-de-Dados-Nao-Relacionais/tree/main/trabalho01)
+
+<br>
+
+* [**EXERCÍCIOS PARA P1**](https://github.com/Leandro-Cardoso/Vassouras-Banco-de-Dados-Nao-Relacionais/tree/main/exercicios_p1)
