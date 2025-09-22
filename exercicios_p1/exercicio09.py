@@ -12,8 +12,6 @@ cursos = db.cursos
 
 # Exercício 9: Implementar um sistema de transferência de aluno entre cursos usando transações.
 
-from bson.objectid import ObjectId
-
 def transferir_aluno(nome_aluno, nome_novo_curso):
     
     try:
@@ -43,7 +41,7 @@ def transferir_aluno(nome_aluno, nome_novo_curso):
         
     except Exception as e:
         print(f"Erro: {e}\nNão foi possivel a transferencia de '{nome_aluno}' para '{nome_novo_curso}'")
-        
+
         return False
 
 nome_aluno = "Ana Silva"
