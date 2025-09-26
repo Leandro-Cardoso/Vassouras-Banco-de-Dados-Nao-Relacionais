@@ -1,6 +1,6 @@
 # VASSOURAS - Bancos de Dados Não Relacionais
 
-Estudo de banco de dados não relacional, com Python, Django e MongoDB.
+Estudo de banco de dados não relacional, com Python, Flask e MongoDB.
 
 <br>
 
