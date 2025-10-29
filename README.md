@@ -28,3 +28,7 @@ Estudo de banco de dados não relacional, com Python, Flask e MongoDB.
 
 * [**AULA 06** - CRUD avançado](https://github.com/Leandro-Cardoso/Vassouras-Banco-de-Dados-Nao-Relacionais/tree/main/aula06)
 * [**AULA 07** - Consultas entre coleções](https://github.com/Leandro-Cardoso/Vassouras-Banco-de-Dados-Nao-Relacionais/tree/main/aula07)
+
+<br>
+
+* [**EXERCÍCIOS 02**](https://github.com/Leandro-Cardoso/Vassouras-Banco-de-Dados-Nao-Relacionais/tree/main/exercicios02)
