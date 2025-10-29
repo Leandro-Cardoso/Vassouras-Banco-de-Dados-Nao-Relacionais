@@ -6,15 +6,15 @@
 
 <br>
 
-* Criar base de dados:
-* Cursos de Engenharia com alunos ativos.
-* Departamento com mais professores.
-* Top-5 turmas por número de alunos.
-* Cidades únicas com count.
-* Ranking por retenção (ativos/total).
-* Bolsistas em cursos de Medicina.
-* Professores com alunos de múltiplas cidades.
-* ROI por departamento: (alunos_ativos / professores * cursos).
+* 01 - Criar base de dados:
+* 02 - Cursos de Engenharia com alunos ativos.
+* 03 - Departamento com mais professores.
+* 04 - Top-5 turmas por número de alunos.
+* 05 - Cidades únicas com count.
+* 06 - Ranking por retenção (ativos/total).
+* 07 - Bolsistas em cursos de Medicina.
+* 08 - Professores com alunos de múltiplas cidades.
+* 09 - ROI por departamento: (alunos_ativos / professores * cursos).
 
 <br>
 
