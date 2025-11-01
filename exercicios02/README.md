@@ -1,4 +1,4 @@
-# Lista de Exercícios (P1)
+# Lista de Exercícios (P2)
 
 [**<- VOLTAR**](https://github.com/Leandro-Cardoso/Vassouras-Banco-de-Dados-Nao-Relacionais)
 
