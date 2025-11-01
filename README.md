@@ -32,3 +32,7 @@ Estudo de banco de dados não relacional, com Python, Flask e MongoDB.
 <br>
 
 * [**EXERCÍCIOS 02**](https://github.com/Leandro-Cardoso/Vassouras-Banco-de-Dados-Nao-Relacionais/tree/main/exercicios02)
+
+<br>
+
+* [**AULA 08** - Cypher e Neo4j](https://github.com/Leandro-Cardoso/Vassouras-Banco-de-Dados-Nao-Relacionais/tree/main/aula08)
